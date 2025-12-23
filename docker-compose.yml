@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  flask-app:
+    image: flask-docker-app:v2
+    container_name: flask-container
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./logs:/app/logs
